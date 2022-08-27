@@ -1,11 +1,9 @@
 # Packages
 PRODUCT_PACKAGES += \
-    LiveWallpapers \
     LiveWallpapersPicker \
     messaging \
     ThemePicker \
     GameSpace \
-    RavenWalls \
     OmniJaws
 
 # Themes
@@ -48,8 +46,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
-ifneq (,$(filter $(RAVEN_LAIR), Official Beta-Official))
 PRODUCT_PACKAGES += \
     RavenDesk \
     CorvusZen
-endif

@@ -48,8 +48,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Blurs
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.sf.blurs_are_expensive=1 \
-    ro.surface_flinger.supports_background_blur=1
+    ro.sf.blurs_are_expensive=0 \
+    ro.surface_flinger.supports_background_blur=0
     
 # Disable blur on app-launch
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
@@ -153,10 +153,6 @@ PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
 
 # Don't dexpreopt prebuilts. (For GMS).
 DONT_DEXPREOPT_PREBUILTS := true
-
-# Enable support of one-handed mode
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.support_one_handed_mode=true
 
 # Enable gestural navigation overlay to match default navigation mode
 PRODUCT_PRODUCT_PROPERTIES += \
